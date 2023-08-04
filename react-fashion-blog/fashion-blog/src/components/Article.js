@@ -1,34 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-    <title>Fashion Blog | Remake</title>
-  </head>
-  <body>
-    <header>
-      <h1>Sartre's List</h1>
-      <h2>Better-Dressed People</h2>
-      </header>
-      <nav>
-        <ul aria-label="main-navigation" role="navigation">
-          <a><li>Women's</li></a>
-          <a><li>Men's</li></a>
-          <a><li>On The Street</li></a>
-          <a><li>The Catwalk</li></a>
-          <a><li>AdWatch</li></a>
-          <a><li>About</li></a>
-        </ul>
-      </nav>
-    <main>
+import "../image/blog-image-1.jpg"
+
+function Article(prop) {
+  return (
+    <div className="App">
+      <main>
       <article>
         <p class="date">11/12/20</p>
         <p class="blog-title">On the Street in Brooklyn</p>
         <img
-          src="./image/blog-image-1.jpg"
+          src={require("../image/blog-image-1.jpg")}
           alt="A woman standing next to a brick wall in a city."
         />
         <p class="para">
@@ -47,13 +27,13 @@
           perferendis magni eligendi illum laborum laboriosam?
         </p>
 
-        <a><p class="continue">Continues...</p></a>
+        <a class="continue"><p>Continues...</p></a>
       </article>
       <article>
         <p class="date">11/11/20</p>
         <p class="blog-title">Vintage in Vogue</p>
         <img
-          src="./image/blog-image-2.jpg"
+          src={require("../image/blog-image-2.jpg")}
           alt="A woman, a man, and a woman's headshots together, showing them dressed up in formal attire."
         />
         <p class="para">
@@ -72,22 +52,11 @@
           blanditiis accusamus ipsam aliquid facilis.
         </p>
 
-        <a><p class="continue">Continues...</p></a>
+        <a class="continue"><p>Continues...</p></a>
       </article>
     </main>
-    <footer>
-      <ul aria-label="main-navigation" role="navigation">
-        <a><li>Home</li></a>
-        <a><li>Women's</li></a>
-        <a><li>Men's</li></a>
-        <a><li>On the Street</li></a>
-        <a><li>The Catwalk</li></a>
-        <a><li>AdWatch</li></a>
-        <a><li>About</li></a>
-        <a><li>Tips</li></a>
-      </ul>
-      <p style="color: gray">&copy; 2013 Valet Industries, Inc</p>
-      <!--inline styling for funsies-->
-    </footer>
-  </body>
-</html>
+    </div>
+  );
+}
+
+export default Article
