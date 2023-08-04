@@ -1,0 +1,87 @@
+
+@font-face { font-family: Gill Sans MT Pro Light; src: url("./Gill-Sans-MT-Pro-Light.otf"); } 
+
+html {
+    border-left: solid 5px lightgray;
+    margin-left: 20em;
+    padding: 1em;
+    font-family: 'Gill Sans MT Pro Light', sans-serif;
+}
+
+h1 {
+    color: tomato;
+    font-size: 5em;
+    font-weight: 100;
+    letter-spacing: -0.02em;
+    margin: 0 0 -0.3em 0;
+    
+}
+
+h2 {
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    min-height: 100vw;
+    max-width: 40em;
+    margin: 3em;
+    padding: 0 1rem 1rem 1rem;
+}
+
+article {
+    border-bottom: 3px lightgray solid;
+}
+
+.date{
+    font-size: 2em;
+    margin: 0 0 -1em 0;
+    color: gray;
+    margin: 2.5em 0 -1.5em 0;
+}
+
+.blog-title{
+    font-size: 3em;
+    margin: 1em 0 0.5em 0;
+
+}
+
+.para::first-letter{
+    initial-letter: 4.5;
+    color: gray;
+    margin: 1em;
+}
+
+.para{
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
+.continue{
+    color: tomato;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    font-size: 0.9em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+header ul li {
+    border-bottom: 2px lightgray solid;
+    color: gray;
+}
+
+footer ul {
+    margin: 4em 0 0 0;
+    color: tomato;
+}
